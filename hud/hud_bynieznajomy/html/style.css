@@ -1,0 +1,1579 @@
+@keyframes SlideAnim{
+  0%{
+    transform: translateY(250px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes SlideAnim2{
+  100%{
+    transform: translateY(250px);
+  }
+
+  0%{
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+
+body {
+  width: 100%;
+  overflow: hidden;
+  font-family: "Exo 2", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.IconContainer {
+  position: absolute;
+  bottom: 0vh;
+  left: 0.1vh;
+}
+
+#logo{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  float: right;
+  right: 85px;
+  top: 40px;
+}
+
+
+.BaseCircle {
+  position: relative;
+  width: 4.2vh !important;
+  height: 4.2vh !important;
+  left: 800px;
+  float: left;
+  margin: 0.3vh;
+  background: rgba(0, 0, 0, 0.658);
+  border-radius: 10px 20px 10px 20px;
+  border: 2px solid rgb(10, 10, 10);
+  animation: SlideAnim 0.5s;
+}
+
+.fa-heart,
+.fa-shield-alt,
+.fa-hamburger,
+.fa-skull {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  font-size: 2.0vh;
+  left: 1.0vh;
+  bottom: 1.0vh;
+}
+
+.fa-brain, .fa-headset  {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  font-size: 1.9vh;
+  left: 0.9vh;
+  bottom: 0.9vh;
+}
+
+.fa-lungs {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  font-size: 1.9vh;
+  left: 0.85vh;
+  bottom: 1.0vh;
+}
+
+.fa-tint {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  font-size: 2.0vh;
+  left: 1.5vh;
+  bottom: 0.9vh;
+}
+
+.fa-microphone {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  font-size: 2.0vh;
+  left: 1.4vh;
+  bottom: 1.1vh;
+  }
+
+  #SpeedCircle {
+    width: 14vh !important;
+    height: 14vh !important;
+    position: absolute;
+    font-size: 5vh;
+    left: 320px;
+    bottom: 40px;
+    background: rgba(27, 27, 27, 0.856);
+    transform: rotate(-180deg);
+    border-radius: 50%;
+  }
+
+#showLokalizacjaSpan{
+  position: relative;
+  top: 1012px;
+  left: 315px;
+  font-size: 26px;
+  color: white;
+  text-shadow: 1px, 1px, black;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: black;
+  font-family: 'OCR A Std', monospace;
+  font-weight: bolder;
+}
+#showKierunekaSpan{
+  position: relative;
+  top: 1012px;
+  left: 315px;
+  font-size: 26px;
+  color: yellow;
+  text-shadow: 1px, 1px, black;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: black;
+  font-family: 'OCR A Std', monospace;
+  font-weight: bolder;
+}
+  
+#vehicle-gear{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 317px;
+  top: 876px;
+  color: white;
+  background: rgba(27, 27, 27, 0.856);
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  border: solid gray;
+  border-width: 3px;
+
+}
+
+  #SpeedIndicator {
+    color: white;
+    position: absolute;
+    font-family: 'OCR A Std', monospace;
+    font-size: 3.5vh;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+    transform: rotate(-180deg);
+  }
+
+  #kmh{
+    color: white;
+    position: absolute;
+    font-family: 'OCR A Std', monospace;
+    font-size: 20px;
+    left: 373px;
+    top: 979px;
+    opacity: 0.4;
+  }
+
+  .CarIcons{
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  #EngineIcon, #EngineIcon2{
+    position: absolute;
+    bottom: 130px;
+    left: 370px;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  #LightIcon, #LightIcon2, #LightIcon3{
+    position: absolute;
+    bottom: 52px;
+    left: 398px;
+    width: 25px !important;
+    height: 25px !important;
+  }
+  
+  #BeltIcon, #BeltIcon2{
+    position: absolute;
+    bottom: 55px;
+    left: 369px;
+    width: 19px !important;
+    height: 19px !important;
+  }
+  
+  #AcuIcon, #AcuIcon2{
+    position: absolute;
+    bottom: 70px;
+    left: 343px;
+    width: 22px !important;
+    height: 22px !important;
+  }
+  
+  #LockIcon, #LockIcon2{
+    position: absolute;
+    bottom: 65px;
+    left: 420px;
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+#EngineIndicator,
+#BeltIndicator,
+#DoorsIndicator,
+#LightIndicator,
+#TempomatIndicator{
+  background: black;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 3px;
+  top: 995px;
+  left: 800px;
+}
+
+.fa-car-crash,
+.fa-user-alt-slash,
+.fa-lightbulb,
+.fa-tachometer-alt,
+.fa-unlock-alt {
+  color: white;
+  text-align: center;
+  position: sticky;
+  height: -50%;
+
+}
+.fa-gas-pump {
+  color: white;
+  font-size: 1vh;
+  position: inherit;
+  left: 1vh;
+  bottom: 1vh;
+  transform: rotate(-180deg);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1904px) {
+  body {
+    width: 100%;
+    overflow: hidden;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    bottom: 0vh;
+    left: 0.1vh;
+  }
+  
+  #logo{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: right;
+    right: 85px;
+    top: 40px;
+  }
+  
+  
+  .BaseCircle {
+    position: relative;
+    width: 4.2vh !important;
+    height: 4.2vh !important;
+    left: 800px;
+    float: left;
+    margin: 0.3vh;
+    background: rgba(0, 0, 0, 0.658);
+    border-radius: 10px 20px 10px 20px;
+    border: 2px solid rgb(10, 10, 10);
+  }
+  
+  .fa-heart,
+  .fa-shield-alt,
+  .fa-hamburger,
+  .fa-skull {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.0vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-brain, .fa-headset  {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.9vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-lungs {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.85vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-tint {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.5vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-microphone {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.4vh;
+    bottom: 1.1vh;
+    }
+  
+
+    #SpeedCircle {
+      width: 14vh !important;
+      height: 14vh !important;
+      position: absolute;
+      font-size: 5vh;
+      left: 315px;
+      bottom: 40px;
+      background: rgba(27, 27, 27, 0.856);
+      transform: rotate(-180deg);
+      border-radius: 50%;
+    }
+  
+  #showLokalizacjaSpan{
+    position: relative;
+    top: 970px;
+    left: 310px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+  #showKierunekaSpan{
+    position: relative;
+    top: 970px;
+    left: 310px;
+    font-size: 24px;
+    color: yellow;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+    
+  #vehicle-gear{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 297px;
+    top: 855px;
+    color: white;
+    background: rgba(27, 27, 27, 0.856);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    border: solid gray;
+    border-width: 3px;
+  }
+  
+    #SpeedIndicator {
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 3.5vh;
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+      transform: rotate(-180deg);
+    }
+  
+    #kmh{
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 19px;
+      left: 368px;
+      top: 945px;
+      opacity: 0.4;
+    }
+  
+    .CarIcons{
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+  
+    #EngineIcon, #EngineIcon2{
+      position: absolute;
+      bottom: 130px;
+      left: 362px;
+      width: 50px !important;
+      height: 50px !important;
+    }
+    
+    #LightIcon, #LightIcon2, #LightIcon3{
+      position: absolute;
+      bottom: 52px;
+      left: 393px;
+      width: 25px !important;
+      height: 25px !important;
+    }
+    
+    #BeltIcon, #BeltIcon2{
+      position: absolute;
+      bottom: 55px;
+      left: 362px;
+      width: 19px !important;
+      height: 19px !important;
+    }
+    
+    #AcuIcon, #AcuIcon2{
+      position: absolute;
+      bottom: 70px;
+      left: 338px;
+      width: 22px !important;
+      height: 22px !important;
+    }
+    
+    #LockIcon, #LockIcon2{
+      position: absolute;
+      bottom: 63px;
+      left: 410px;
+      width: 35px !important;
+      height: 35px !important;
+    }
+  
+  #EngineIndicator,
+  #BeltIndicator,
+  #DoorsIndicator,
+  #LightIndicator,
+  #TempomatIndicator{
+    background: black;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 3px;
+    top: 995px;
+    left: 800px;
+  }
+  
+  .fa-car-crash,
+  .fa-user-alt-slash,
+  .fa-lightbulb,
+  .fa-tachometer-alt,
+  .fa-unlock-alt {
+    color: white;
+    text-align: center;
+    position: sticky;
+    height: -50%;
+  
+  }
+  .fa-gas-pump {
+    color: white;
+    font-size: 1vh;
+    position: inherit;
+    left: 1vh;
+    bottom: 1vh;
+    transform: rotate(-180deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1680px) {
+
+  body {
+    width: 100%;
+    overflow: hidden;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    bottom: 0vh;
+    left: 0.1vh;
+  }
+  
+  #logo{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: right;
+    right: 85px;
+    top: 40px;
+  }
+  
+  
+  .BaseCircle {
+    position: relative;
+    width: 4.2vh !important;
+    height: 4.2vh !important;
+    left: 700px;
+    float: left;
+    margin: 0.3vh;
+    background: rgba(0, 0, 0, 0.658);
+    border-radius: 10px 20px 10px 20px;
+    border: 2px solid rgb(10, 10, 10);
+  }
+  
+  .fa-heart,
+  .fa-shield-alt,
+  .fa-hamburger,
+  .fa-skull {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.0vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-brain, .fa-headset  {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.9vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-lungs {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.85vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-tint {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.5vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-microphone {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.4vh;
+    bottom: 1.1vh;
+    }
+  
+
+    #SpeedCircle {
+      width: 14vh !important;
+      height: 14vh !important;
+      position: absolute;
+      font-size: 5vh;
+      left: 280px;
+      bottom: 40px;
+      background: rgba(27, 27, 27, 0.856);
+      transform: rotate(-180deg);
+      border-radius: 50%;
+    }
+  
+  #showLokalizacjaSpan{
+    position: relative;
+    top: 975px;
+    left: 280px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+  #showKierunekaSpan{
+    position: relative;
+    top: 975px;
+    left: 275px;
+    font-size: 24px;
+    color: yellow;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+    
+  #vehicle-gear{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 265px;
+    top: 850px;
+    color: white;
+    background: rgba(27, 27, 27, 0.856);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    border: solid gray;
+    border-width: 3px;
+  
+  }
+  
+    #SpeedIndicator {
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 3.5vh;
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+      transform: rotate(-180deg);
+    }
+  
+    #kmh{
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 19px;
+      left: 333px;
+      top: 945px;
+      opacity: 0.4;
+    }
+  
+    .CarIcons{
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+  
+    #EngineIcon, #EngineIcon2{
+      position: absolute;
+      bottom: 130px;
+      left: 327px;
+      width: 50px !important;
+      height: 50px !important;
+    }
+    
+    #LightIcon, #LightIcon2, #LightIcon3{
+      position: absolute;
+      bottom: 52px;
+      left: 358px;
+      width: 25px !important;
+      height: 25px !important;
+    }
+    
+    #BeltIcon, #BeltIcon2{
+      position: absolute;
+      bottom: 55px;
+      left: 329px;
+      width: 19px !important;
+      height: 19px !important;
+    }
+    
+    #AcuIcon, #AcuIcon2{
+      position: absolute;
+      bottom: 70px;
+      left: 303px;
+      width: 22px !important;
+      height: 22px !important;
+    }
+    
+    #LockIcon, #LockIcon2{
+      position: absolute;
+      bottom: 63px;
+      left: 377px;
+      width: 35px !important;
+      height: 35px !important;
+    }
+  
+  #EngineIndicator,
+  #BeltIndicator,
+  #DoorsIndicator,
+  #LightIndicator,
+  #TempomatIndicator{
+    background: black;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 3px;
+    top: 995px;
+    left: 800px;
+  }
+  
+  .fa-car-crash,
+  .fa-user-alt-slash,
+  .fa-lightbulb,
+  .fa-tachometer-alt,
+  .fa-unlock-alt {
+    color: white;
+    text-align: center;
+    position: sticky;
+    height: -50%;
+  
+  }
+  .fa-gas-pump {
+    color: white;
+    font-size: 1vh;
+    position: inherit;
+    left: 1vh;
+    bottom: 1vh;
+    transform: rotate(-180deg);
+  }
+}
+
+
+
+
+
+
+  
+@media only screen and (max-width: 1440px) {
+
+  body {
+    width: 100%;
+    overflow: hidden;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    bottom: 0vh;
+    left: 0.1vh;
+  }
+  
+  #logo{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: right;
+    right: 85px;
+    top: 40px;
+  }
+  
+  
+  .BaseCircle {
+    position: relative;
+    width: 4.2vh !important;
+    height: 4.2vh !important;
+    left: 600px;
+    float: left;
+    margin: 0.3vh;
+    background: rgba(0, 0, 0, 0.658);
+    border-radius: 10px 20px 10px 20px;
+    border: 2px solid rgb(10, 10, 10);
+  }
+  
+  .fa-heart,
+  .fa-shield-alt,
+  .fa-hamburger,
+  .fa-skull {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.0vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-brain, .fa-headset  {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.9vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-lungs {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.85vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-tint {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.5vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-microphone {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.4vh;
+    bottom: 1.1vh;
+    }
+  
+
+    #SpeedCircle {
+      width: 14vh !important;
+      height: 14vh !important;
+      position: absolute;
+      font-size: 5vh;
+      left: 270px;
+      bottom: 35px;
+      background: rgba(27, 27, 27, 0.856);
+      transform: rotate(-180deg);
+      border-radius: 50%;
+    }
+  
+  #showLokalizacjaSpan{
+    position: relative;
+    top: 835px;
+    left: 265px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+
+  #showKierunekaSpan{
+    position: relative;
+    top: 835px;
+    left: 265px;
+    font-size: 24px;
+    color: yellow;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+    
+  #vehicle-gear{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 255px;
+    top: 730px;
+    color: white;
+    background: rgba(27, 27, 27, 0.856);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    border: solid gray;
+    border-width: 3px;
+  
+  }
+  
+    #SpeedIndicator {
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 3.5vh;
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+      transform: rotate(-180deg);
+    }
+  
+    #kmh{
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 19px;
+      left: 313px;
+      top: 812px;
+      opacity: 0.4;
+    }
+  
+    .CarIcons{
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+  
+    #EngineIcon, #EngineIcon2{
+      position: absolute;
+      bottom: 105px;
+      left: 307px;
+      width: 50px !important;
+      height: 50px !important;
+    }
+    
+    #LightIcon, #LightIcon2, #LightIcon3{
+      position: absolute;
+      bottom: 42px;
+      left: 333px;
+      width: 25px !important;
+      height: 25px !important;
+    }
+    
+    #BeltIcon, #BeltIcon2{
+      position: absolute;
+      bottom: 47px;
+      left: 305px;
+      width: 19px !important;
+      height: 19px !important;
+    }
+    
+    #AcuIcon, #AcuIcon2{
+      position: absolute;
+      bottom: 70px;
+      left: 283px;
+      width: 22px !important;
+      height: 22px !important;
+    }
+    
+    #LockIcon, #LockIcon2{
+      position: absolute;
+      bottom: 63px;
+      left: 354px;
+      width: 35px !important;
+      height: 35px !important;
+    }
+  
+  #EngineIndicator,
+  #BeltIndicator,
+  #DoorsIndicator,
+  #LightIndicator,
+  #TempomatIndicator{
+    background: black;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 3px;
+    top: 995px;
+    left: 800px;
+  }
+  
+  .fa-car-crash,
+  .fa-user-alt-slash,
+  .fa-lightbulb,
+  .fa-tachometer-alt,
+  .fa-unlock-alt {
+    color: white;
+    text-align: center;
+    position: sticky;
+    height: -50%;
+  
+  }
+  .fa-gas-pump {
+    color: white;
+    font-size: 1vh;
+    position: inherit;
+    left: 1vh;
+    bottom: 1vh;
+    transform: rotate(-180deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2060px) {
+
+
+  body {
+    width: 100%;
+    overflow: hidden;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    bottom: 0vh;
+    left: 0.1vh;
+  }
+  
+  #logo{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: right;
+    right: 115px;
+    top: 40px;
+  }
+  
+  
+  .BaseCircle {
+    position: relative;
+    width: 4.2vh !important;
+    height: 4.2vh !important;
+    left: 1150px;
+    float: left;
+    margin: 0.3vh;
+    background: rgba(0, 0, 0, 0.658);
+    border-radius: 10px 20px 10px 20px;
+    border: 2px solid rgb(10, 10, 10);
+    animation: SlideAnim 0.5s;
+  }
+  
+  .fa-heart,
+  .fa-shield-alt,
+  .fa-hamburger,
+  .fa-skull {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.0vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-brain, .fa-headset  {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.9vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-lungs {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.85vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-tint {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.5vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-microphone {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.4vh;
+    bottom: 1.1vh;
+    }
+  
+    #SpeedCircle {
+      width: 14vh !important;
+      height: 14vh !important;
+      position: absolute;
+      font-size: 5vh;
+      left: 70px;
+      bottom: 40px;
+      background: rgba(27, 27, 27, 0.856);
+      transform: rotate(-180deg);
+      border-radius: 50%;
+    }
+  
+  #showLokalizacjaSpan{
+    position: relative;
+    top: 1012px;
+    left: 65px;
+    font-size: 26px;
+    color: white;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+  #showKierunekaSpan{
+    position: relative;
+    top: 1012px;
+    left: 65px;
+    font-size: 26px;
+    color: yellow;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+    
+  #vehicle-gear{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 60px;
+    top: 876px;
+    color: white;
+    background: rgba(27, 27, 27, 0.856);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    border: solid gray;
+    border-width: 3px;
+  
+  }
+  
+    #SpeedIndicator {
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 3.5vh;
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+      transform: rotate(-180deg);
+    }
+  
+    #kmh{
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 20px;
+      left: 123px;
+      top: 979px;
+      opacity: 0.4;
+    }
+  
+    .CarIcons{
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+  
+    #EngineIcon, #EngineIcon2{
+      position: absolute;
+      bottom: 130px;
+      left: 120px;
+      width: 50px !important;
+      height: 50px !important;
+    }
+    
+    #LightIcon, #LightIcon2, #LightIcon3{
+      position: absolute;
+      bottom: 52px;
+      left: 148px;
+      width: 25px !important;
+      height: 25px !important;
+    }
+    
+    #BeltIcon, #BeltIcon2{
+      position: absolute;
+      bottom: 55px;
+      left: 119px;
+      width: 19px !important;
+      height: 19px !important;
+    }
+    
+    #AcuIcon, #AcuIcon2{
+      position: absolute;
+      bottom: 70px;
+      left: 93px;
+      width: 22px !important;
+      height: 22px !important;
+    }
+    
+    #LockIcon, #LockIcon2{
+      position: absolute;
+      bottom: 65px;
+      left: 170px;
+      width: 35px !important;
+      height: 35px !important;
+    }
+  
+  #EngineIndicator,
+  #BeltIndicator,
+  #DoorsIndicator,
+  #LightIndicator,
+  #TempomatIndicator{
+    background: black;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 3px;
+    top: 995px;
+    left: 800px;
+  }
+  
+  .fa-car-crash,
+  .fa-user-alt-slash,
+  .fa-lightbulb,
+  .fa-tachometer-alt,
+  .fa-unlock-alt {
+    color: white;
+    text-align: center;
+    position: sticky;
+    height: -50%;
+  
+  }
+  .fa-gas-pump {
+    color: white;
+    font-size: 1vh;
+    position: inherit;
+    left: 1vh;
+    bottom: 1vh;
+    transform: rotate(-180deg);
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 3000px) {
+
+
+  body {
+    width: 100%;
+    overflow: hidden;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    bottom: 0vh;
+    left: 0.1vh;
+  }
+  
+  #logo{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: right;
+    right: 155px;
+    top: 70px;
+  }
+  
+  
+  .BaseCircle {
+    position: relative;
+    width: 4.2vh !important;
+    height: 4.2vh !important;
+    left: 1450px;
+    float: left;
+    margin: 0.3vh;
+    background: rgba(0, 0, 0, 0.658);
+    border-radius: 10px 20px 10px 20px;
+    border: 2px solid rgb(10, 10, 10);
+    animation: SlideAnim 0.5s;
+  }
+  
+  .fa-heart,
+  .fa-shield-alt,
+  .fa-hamburger,
+  .fa-skull {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.0vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-brain, .fa-headset  {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.9vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-lungs {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 1.9vh;
+    left: 0.85vh;
+    bottom: 1.0vh;
+  }
+  
+  .fa-tint {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.5vh;
+    bottom: 0.9vh;
+  }
+  
+  .fa-microphone {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    font-size: 2.0vh;
+    left: 1.4vh;
+    bottom: 1.1vh;
+    }
+  
+    #SpeedCircle {
+      width: 14vh !important;
+      height: 14vh !important;
+      position: absolute;
+      font-size: 5vh;
+      left: 70px;
+      bottom: 40px;
+      background: rgba(27, 27, 27, 0.856);
+      transform: rotate(-180deg);
+      border-radius: 50%;
+    }
+  
+  #showLokalizacjaSpan{
+    position: relative;
+    top: 1370px;
+    left: 65px;
+    font-size: 26px;
+    color: white;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+  #showKierunekaSpan{
+    position: relative;
+    top: 1370px;
+    left: 65px;
+    font-size: 26px;
+    color: yellow;
+    text-shadow: 1px, 1px, black;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: 'OCR A Std', monospace;
+    font-weight: bolder;
+  }
+    
+  #vehicle-gear{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 60px;
+    top: 1196px;
+    color: white;
+    background: rgba(27, 27, 27, 0.856);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    border: solid gray;
+    border-width: 3px;
+  
+  }
+  
+    #SpeedIndicator {
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 3.5vh;
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+      transform: rotate(-180deg);
+    }
+  
+    #kmh{
+      color: white;
+      position: absolute;
+      font-family: 'OCR A Std', monospace;
+      font-size: 20px;
+      left: 146px;
+      top: 1320px;
+      opacity: 0.4;
+    }
+  
+    .CarIcons{
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+  
+    #EngineIcon, #EngineIcon2{
+      position: absolute;
+      bottom: 170px;
+      left: 145px;
+      width: 50px !important;
+      height: 50px !important;
+    }
+    
+    #LightIcon, #LightIcon2, #LightIcon3{
+      position: absolute;
+      bottom: 62px;
+      left: 173px;
+      width: 25px !important;
+      height: 25px !important;
+    }
+    
+    #BeltIcon, #BeltIcon2{
+      position: absolute;
+      bottom: 65px;
+      left: 144px;
+      width: 19px !important;
+      height: 19px !important;
+    }
+    
+    #AcuIcon, #AcuIcon2{
+      position: absolute;
+      bottom: 80px;
+      left: 118px;
+      width: 22px !important;
+      height: 22px !important;
+    }
+    
+    #LockIcon, #LockIcon2{
+      position: absolute;
+      bottom: 75px;
+      left: 195px;
+      width: 35px !important;
+      height: 35px !important;
+    }
+  
+  #EngineIndicator,
+  #BeltIndicator,
+  #DoorsIndicator,
+  #LightIndicator,
+  #TempomatIndicator{
+    background: black;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 3px;
+    top: 995px;
+    left: 800px;
+  }
+  
+  .fa-car-crash,
+  .fa-user-alt-slash,
+  .fa-lightbulb,
+  .fa-tachometer-alt,
+  .fa-unlock-alt {
+    color: white;
+    text-align: center;
+    position: sticky;
+    height: -50%;
+  
+  }
+  .fa-gas-pump {
+    color: white;
+    font-size: 1vh;
+    position: inherit;
+    left: 1vh;
+    bottom: 1vh;
+    transform: rotate(-180deg);
+  }
+}
+
+  
+
